@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    --backcolor :rgb(39, 38, 38);
+}
+#navbar{
+    background-color: rgb(39, 38, 38);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    margin: 20px;
+    /* border: 2px solid white; */
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: gray;
+    font-family: 'Rubik', sans-serif;
+}
+.nav ul  a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: gray;
+    transition: .5s;
+}
+.nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backcolor);
+    color: white;
+    /* border: 2px solid white; */
+    min-height: 92vh;
+    align-items: center;
+}
+.projecttitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projecttitle p{
+    color: gray;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 5px;
+}
+.projecttitle h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem;
+    margin: 5px;
+}
+.projectsdetails{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 100px;
+}
+.projectsdetails .projectss1{
+    /* border: 2px solid white; */
+    display: flex;
+}
+.projectsdetails .projectss1 .project1{
+    /* border: 2px solid white; */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px gray;
+}
+
+.projectsdetails .projectss1 .project1 .proimg img{
+    width: 400px;
+    border: 2px solid var(--backcolor);
+    /* border-radius: 20px; */
+    padding: 10px;
+    /* box-shadow: 0 0 20px 0px white; */
+}
+.projectsdetails .projectss1 .project1 .proinfo{
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    margin: 10px 0px;
+    padding: 0px 30px;
+    text-align: center;
+    /* box-shadow: 0 0 20px 0px white; */
+}
+.projectsdetails .projectss1 .project1 .proinfo h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+.projectsdetails .projectss2{
+    /* border: 2px solid white; */
+    display: flex;
+}
+.projectsdetails .projectss2 .project1{
+    /* border: 2px solid white; */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px gray;
+}
+
+.projectsdetails .projectss2 .project1 .proimg img{
+    width: 400px;
+    border: 2px solid var(--backcolor);
+    /* border-radius: 20px; */
+    padding: 10px;
+    /* box-shadow: 0 0 20px 0px white; */
+}
+.projectsdetails .projectss2 .project1 .proinfo{
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    margin: 10px 0px;
+    padding: 0px 30px;
+    text-align: center;
+    /* box-shadow: 0 0 20px 0px white; */
+}
+.projectsdetails .projectss2 .project1 .proinfo h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+#contact{
+    display: flex;
+    min-height: 50vh;
+    /* border: 2px solid white; */
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--backcolor);
+}
+.contactinfo{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0px gray;
+    padding: 30px;
+    align-items: center;
+}
+.contactinfo p{
+    color: gray;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+}
+.contactinfo h2{
+    color: gray;
+    font-size: 3.4rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px;
+}
+.contactinfo a{
+    color:var(--backcolor);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 15%;
+    background-color: gray;
+    transition: .4s;
+}
+.contactinfo a:hover{
+    box-shadow: 0 0 20px 0px gray;
+    background-color: white;
+}
+
+/* footer section start  */
+
+#footer{
+    background-color: var(--backcolor);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0px gray;
+    /* border-top: 2px solid gray; */
+}
+.footop{
+    /* border: 2px solid white; */
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footop .bx1{
+    /* border: 2px solid white; */
+    width: 25%;
+}
+.footop .bx1 h1{
+    color: gray;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx1 p{
+    margin-top: 20px;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx2{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx2 h2{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx2 a{
+    color: gray;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    transition: .3s;
+    /* border: 2px solid white; */
+    width: 35%;
+}
+.footop .bx2 a:hover{
+    /* text-decoration: underline; */
+    color: white;
+}
+.footop .bx3{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx3 h2{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx3 p{
+    color: gray;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx4{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx4 h2{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx4 .icon{
+    /* border: 2px solid white; */
+    padding: 10px 0px ;
+}
+.footop .bx4 .icon i{
+    color: gray;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* border: 2px solid white; */
+    padding: 5px;
+    border-radius: 50%;
+}
+.footop .bx4 .icon .fa-facebook{
+    padding: 5px 8px;
+}
+.footop .bx4 .icon i:hover{
+    color: var(--backcolor);
+    box-shadow: 0 0 30px 0px white;
+    background-color: gray;
+}
+.footbot{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    box-shadow: 0  0 10px 0px gray;
+}
+.footbot p{
+    color: gray;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footbot p span{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:450px){
+    #navbar{
+    width: 1450px;
+    }
+    #project{
+    width: 1450px;
+    }
+    .projectsdetails{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .projectsdetails .projectss1{
+        display: flex;
+        flex-direction: column;
+    }
+    .projectsdetails .projectss1 .project1{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        box-shadow: none;
+    }
+    .projectsdetails .projectss1 .project1 .proinfo{
+        margin: 0px 150px;
+    }
+
+    .projectsdetails .projectss1 .project1 .proimg img{
+        width: 700px;
+    }
+    .projectsdetails .projectss2{
+        display: flex;
+        flex-direction: column;
+    }
+    .projectsdetails .projectss2 .project1{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        box-shadow: none;
+    }
+    .projectsdetails .projectss2 .project1 .proinfo{
+        margin: 0px 150px;
+    }
+
+    .projectsdetails .projectss2 .project1 .proimg img{
+        width: 700px;
+    }
+    #contact{
+        width: 1450px;
+    }
+    #footer{
+        width: 1450px;
+    }
+    .footbot{
+        box-shadow: none;
+    }
+}
+
+
+
+@media(max-width:350px){
+    #navbar{
+    width: 1395px;
+    }
+    #home{
+        display: flex;
+        flex-direction:column-reverse;
+        width: 1395px;
+    }
+    .homeimg img{
+        margin: 60px;
+    }
+    #project{
+        width: 1395px;
+    }
+    #contact{
+        width:1395px;
+    }
+    #footer{
+        width: 1395px;
+    }
+    .footbot{
+        box-shadow: none;
+    }
+}
+

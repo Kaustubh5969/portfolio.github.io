@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    --backcolor :rgb(39, 38, 38);
+}
+#navbar{
+    background-color: rgb(39, 38, 38);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    margin: 20px;
+    /* border: 2px solid white; */
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: gray;
+    font-family: 'Rubik', sans-serif;
+}
+.nav ul  a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: gray;
+    transition: .5s;
+}
+.nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backcolor);
+    color: white;
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 30px;
+}
+.contacttitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacttitle p{
+    color: gray;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 5px;
+}
+.contacttitle h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem;
+    margin: 5px;
+}
+.contactdetails{
+    display: flex;
+    /* border: 2px solid white; */
+    width: 1000px;
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 50px;
+
+}
+.contact1{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    margin-right: 30px;
+
+    justify-content: center;
+}
+.contact1 .con{
+    /* border: 2px solid white; */
+    margin: 10px 0px;
+    display: flex;
+    box-shadow: 0 0 10px 0px gray;
+    /* padding: 20px; */
+}
+.contact1 .con i{
+    color: gray;
+    font-size: 1.7rem;
+    /* border: 2px solid white; */
+    padding: 20px;
+}
+.contact1 .con .fa-mobile{
+    padding: 20px 25px;
+}
+.contact1 .con p{
+    color:var(--backcolor);
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    /* border-left: 2px solid white; */
+    padding: 20px;
+    background-color: gray;
+    width: 100%;
+}
+
+.contact1 .conicon{
+    /* border: 2px solid white; */
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact1 .conicon i{
+    /* border: 1px solid gray; */
+    font-size: 1.8rem;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+    margin: 10px 15px;
+    border-radius: 50px;
+}
+.contact1 .conicon .fa-facebook{
+    padding: 10px 15px;
+}
+.contact1 .conicon i:hover{
+    box-shadow: 0 0 20px 0px white;
+    background-color: gray;
+    color: var(--backcolor);
+
+}
+
+.contact2{
+    border-left: 1px solid white;
+    display: flex;
+    width: 50%;
+    /* padding-left:30px ; */
+    /* text-align: center; */
+}
+.contact2 form{
+    /* border: 2px solid white; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.contact2 form .maincon{
+    display: flex;
+    /* border: 2px solid white; */
+    margin: 10px 0px;
+}
+
+.contact2 form label{
+    font-family: 'Rubik', sans-serif;
+    /* padding: 10px; */
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.contact2 form input{
+    /* margin:0px  20px; */
+    margin-left: 50px;
+    font-size: 1.3rem;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    color: gray;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    background-color: transparent;
+    box-shadow: 0 0 10px 0px gray;
+}
+.contact2 form textarea{
+    /* margin:0px  20px; */
+    margin-left: 50px;
+    color: gray;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    background-color: transparent;
+    box-shadow: 0 0 10px 0px gray;
+}
+.contact2 form .conbutt{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.contact2 form .conbutt a{
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid gray;
+    text-align: center;
+    margin: 20px 0px;
+    color: var(--backcolor);
+    border-radius: 10px;
+    width: 40%;
+    background-color: gray;
+    transition: .5s;
+}
+.contact2 form a:hover{
+    box-shadow: 0 0 10px 0px white;
+    background-color: transparent;
+    color: gray;
+}
+
+
+#footer{
+    background-color: var(--backcolor);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0px gray;
+    /* border-top: 2px solid gray; */
+}
+.footop{
+    /* border: 2px solid white; */
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footop .bx1{
+    /* border: 2px solid white; */
+    width: 25%;
+}
+.footop .bx1 h1{
+    color: gray;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx1 p{
+    margin-top: 20px;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx2{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx2 h2{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx2 a{
+    color: gray;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    transition: .3s;
+    /* border: 2px solid white; */
+    width: 35%;
+}
+.footop .bx2 a:hover{
+    /* text-decoration: underline; */
+    color: white;
+}
+.footop .bx3{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx3 h2{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx3 p{
+    color: gray;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx4{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx4 h2{
+    color: gray;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx4 .icon{
+    /* border: 2px solid white; */
+    padding: 10px 0px ;
+}
+.footop .bx4 .icon i{
+    color: gray;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* border: 2px solid white; */
+    padding: 5px;
+    border-radius: 50%;
+}
+.footop .bx4 .icon .fa-facebook{
+    padding: 5px 8px;
+}
+.footop .bx4 .icon i:hover{
+    color: var(--backcolor);
+    box-shadow: 0 0 30px 0px white;
+    background-color: gray;
+}
+.footbot{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    box-shadow: 0  0 10px 0px gray;
+}
+.footbot p{
+    color: gray;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footbot p span{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:450px){
+    body{
+        background-color: var(--backcolor);
+    }
+    #navbar{
+    width: 1450px;
+    }
+    #contact{
+        /* border: 2px solid white; */
+        width: 1450px;
+        height: 200vh;
+        padding: 50px 0px ;
+    }
+    .contactdetails{
+        display: flex;
+        /* border: 2px solid white; */
+        flex-direction: column;
+    }
+    .contactdetails .contact2{
+        display: flex;
+        border: none;
+        width: 100%;
+        margin-top: 30px;
+        /* border: 2px solid white; */
+    }
+    .contact2 form input{
+        margin: 0px;
+    }
+    .contact2 form textarea{
+        margin: 0px;
+    }
+    #footer{
+        width: 1450px;
+    }
+    .footbot{
+        box-shadow: none;
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:350px){
+    #navbar{
+    width: 1395px;
+    }
+    #contact{
+        /* border: 2px solid white; */
+        width: 1395px;
+        height: 200vh;
+        padding: 50px 0px ;
+    }
+
+    #footer{
+        width: 1395px;
+    }
+    .footbot{
+        box-shadow: none;
+    }
+}
